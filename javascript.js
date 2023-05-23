@@ -1,14 +1,16 @@
-function Form(form) {
-  this.form = form;
-  this.visible = false;
-  this.toggle = () => {
+class Form {
+    constructor(form, visible) {
+      this.form = form;
+      this.visible = false;
+    }
+  toggle() {
     this.visible ? this.close() : this.open();
-  };
-  this.open = () => {
+  }
+  open(){
     this.form.style.visibility = 'visible'
     this.visible = true;
   }
-  this.close = () => {
+  close(){
     this.form.style.visibility = 'hidden';
     this.visible = false;
     inputs = document.querySelectorAll('input');

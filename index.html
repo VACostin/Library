@@ -17,19 +17,19 @@
       <button type="button" id="closeForm">X</button>
       <fieldset>
         <label for="title">Title:</label>
-        <input id="title" type="text">
+        <input id="title" type="text" pattern="^[A-Za-z0-9.,\- ]+$">
       </fieldset>
       <fieldset>
         <label for="author">Author:</label>
-        <input id="author" type="text">
+        <input id="author" type="text" pattern="^[A-Za-z\- ]+$">
       </fieldset>
       <fieldset>
         <label for="pages">Pages:</label>
-        <input id="pages" type="number">
+        <input id="pages" type="number" pattern="^[0-9]+$">
       </fieldset>
       <fieldset>
         <label for="review">Review:</label>
-        <input id="review" type="text">
+        <input id="review" type="text" pattern="^[A-Za-z0-9.,\- ]+$">
       </fieldset>
       <button type="submit" id="submit">SUBMIT</button>
     </form>

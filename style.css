@@ -59,6 +59,8 @@ form {
 }
 
 #closeForm {
+  position: absolute;
+  top: 0px;
   color: red;
   width: 8%;
   margin-right: 0;
@@ -71,6 +73,7 @@ fieldset {
   border-style: none;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 input {
@@ -78,10 +81,12 @@ input {
 }
 
 #submit {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   height: 40px;
-  margin-bottom: 4%;
   width: 16%;
-  margin-left: 40%;
+  z-index: 1;
 }
 
 #bookList {
